@@ -376,3 +376,19 @@ numeros[::2]
 numeros[1::2]
 numeros[::-1]
 numeros[::-2]
+
+
+frase = 'Python é uma linguagem excelente'
+'py' not in frase
+'ing' in frase
+len(frase)
+frase.lower()
+frase
+frase = frase.upper()
+frase
+
+frase.split()
+frase.split('E')
+
+# dir(str)
+# help(str.center)
