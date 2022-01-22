@@ -357,3 +357,22 @@ print(doc)
 doc2 = '''Também é possível
 ... com 3 aspas simples'''
 doc2
+
+
+nome = 'Ana Paula'
+nome[0]
+nome[6]
+nome[-3]
+nome[4:]
+nome[-5:]
+nome[:3]
+nome[2:5]
+nome[::-1]
+
+numeros = '1234567890'
+numeros
+numeros[::]
+numeros[::2]
+numeros[1::2]
+numeros[::-1]
+numeros[::-2]
