@@ -1,4 +1,6 @@
 # Primeiros Exemplos
+import decimal
+from decimal import Decimal, getcontext
 from re import T, X
 
 
@@ -229,3 +231,129 @@ lista_c = [1, 2, 3]
 lista_a is lista_b
 lista_b is lista_c
 lista_a is not lista_c
+
+
+# Builtins
+
+# type()
+type(1)
+__builtins__.type('Fala Galera!')
+__builtins__.print(10 / 3)
+
+# __builtins__.help(__builtins__.dir)
+
+# a = 7
+# import math
+# dir ()
+# dir(__builtins__)
+
+
+name = 'João da Silva'
+type(name)
+__builtins__.len(name)
+
+dir()
+
+
+# Conversão de Tipos
+2 + 3
+'2' + '3'
+# 2 + '3'
+# print (2 + '3')
+
+a = 2
+b = '3'
+
+print(type(a))
+print(type(b))
+
+print(a + iny(a))
+print(str(a) + b)
+
+type(str(a))
+
+# print(2 + int('3.4'))
+
+
+# Coerção Automática
+10 / 2
+type(10 / 2)
+10 / 3
+10 // 3
+type(10 // 3)
+10 // 3.3
+type(10 // 3.3)
+10 / 2.5
+2 + True
+2 + False
+type(1 + 2)
+type(1 + 2.5)
+
+
+# Tipos Numéricos
+dir(int)
+dir(float)
+
+a = 5
+b = 2.5
+a / b
+a + b
+a * b
+
+type(a)
+type(b)
+type(a - b)
+
+b.is_integer()
+5.0.is_integer()
+
+dir(int)
+int.__add__(2, 3)
+2 + 3
+
+(-2).__abs__()
+abs(-2)
+
+(-3.6).__abs__()
+dir(float)
+abs(-3.6)
+
+
+#1.1 + 2.2
+Decimal(1) / Decimal(7)
+
+getcontext().prec = 4
+Decimal(1) / Decimal(7)
+Decimal.max(Decimal(1), Decimal(7))
+dir(Decimal)
+
+1.1 + 2.2
+getcontext().prec = 10
+Decimal(1.1) + Decimal(2.2)
+
+dir(decimal)
+dir()
+
+
+# Tipo String
+dir(str)
+nome = 'Saulo Pedro'
+nome
+nome[0]
+# nome[0] = 'p'
+
+# 'marca d'água'
+"Dias D'Avila" == 'Dias D\'Avila'
+"Teste \" funciona!"
+texto = 'Texto entre apostrófos pode ter "aspas"'
+texto
+
+doc = """Texto com múltiplas
+      ... linhas"""
+doc
+print('Texto com múltiplas\n\t... linhas')
+print(doc)
+
+doc2 = '''Também é possível
+... com 3 aspas simples'''
+doc2
